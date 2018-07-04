@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+/* quick reset so all our padding is the right size */
+* {
+  box-sizing: border-box; }
+
+.calculator input,
+.calc-button {
+  font-family: 'Space Mono'; }
+
+/* add some spacing */
+body {
+  background: #f6f6f6;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+.calc-button {
+  background: rgba(0, 0, 0, 0.5);
+  /* light background with opacity 50% */
+  border: 1px solid #111;
+  /* black border */
+  padding: 20px;
+  color: #eee;
+  /* white text */
+  border-radius: 5px;
+  /* rounded corners */
+  font-size: 22px;
+  /* larger fonts */
+  cursor: pointer;
+  /* make it look clickable */ }
+
+.calculator-buttons {
+  padding: 20px;
+  display: grid;
+  /* create 4 columns */
+  grid-template-columns: repeat(4, 1fr); }
+
+/*# sourceMappingURL=styles.css.map */
