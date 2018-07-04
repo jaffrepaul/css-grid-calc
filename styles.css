@@ -13,6 +13,26 @@ body {
   padding-bottom: 30px;
   padding-top: 30px; }
 
+/* limit the width and center */
+.calculator {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #111;
+  border-radius: 5px; }
+
+.calculator input {
+  /* reset basic form styles */
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 20px 10px;
+  width: 100%;
+  border-bottom: 2px solid #111;
+  color: #333;
+  text-align: right;
+  font-size: 40px; }
+
 .calc-button {
   background: rgba(0, 0, 0, 0.5);
   /* light background with opacity 50% */
@@ -29,9 +49,24 @@ body {
   /* make it look clickable */ }
 
 .calculator-buttons {
+  /* small spacing within our container */
   padding: 20px;
+  /* the grid stuff! */
   display: grid;
   /* create 4 columns */
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+  /* add the grid gap */
+  grid-gap: 15px; }
+
+/* span across 3 columns */
+.is-zero,
+.is-clear {
+  grid-column: span 3; }
+
+.is-clear {
+  background: #3572db; }
+
+.is-equals {
+  background: #28d060; }
 
 /*# sourceMappingURL=styles.css.map */
