@@ -1,24 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Space+Mono");
+
 /* quick reset so all our padding is the right size */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
 .calculator input,
 .calc-button {
-  font-family: 'Space Mono'; }
+  font-family: 'Space Mono'; 
+}
 
 /* add some spacing */
 body {
   background: #f6f6f6;
   padding-bottom: 30px;
-  padding-top: 30px; }
+  padding-top: 30px; 
+}
 
 /* limit the width and center */
 .calculator {
   max-width: 400px;
   margin: 0 auto;
   border: 2px solid #111;
-  border-radius: 5px; }
+  border-radius: 5px; 
+}
 
 .calculator input {
   /* reset basic form styles */
@@ -31,7 +36,8 @@ body {
   border-bottom: 2px solid #111;
   color: #333;
   text-align: right;
-  font-size: 40px; }
+  font-size: 40px; 
+}
 
 .calc-button {
   background: rgba(0, 0, 0, 0.5);
@@ -46,7 +52,8 @@ body {
   font-size: 22px;
   /* larger fonts */
   cursor: pointer;
-  /* make it look clickable */ }
+  /* make it look clickable */ 
+}
 
 .calculator-buttons {
   /* small spacing within our container */
@@ -56,17 +63,21 @@ body {
   /* create 4 columns */
   grid-template-columns: repeat(4, 1fr);
   /* add the grid gap */
-  grid-gap: 15px; }
+  grid-gap: 15px; 
+}
 
 /* span across 3 columns */
 .is-zero,
 .is-clear {
-  grid-column: span 3; }
+  grid-column: span 3; 
+}
 
 .is-clear {
-  background: #3572db; }
+  background: #3572db; 
+}
 
 .is-equals {
-  background: #28d060; }
+  background: #28d060; 
+}
 
 /*# sourceMappingURL=styles.css.map */
