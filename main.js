@@ -1,21 +1,19 @@
-const calculator = Array.from(document.getElementsByClassName('calculator-buttons'));
-const display = document.getElementById('display');
-console.log(display);
+const calculatorButtons = Array.from(document.getElementsByClassName('calculator-buttons'));
+const displayWindow = document.getElementById('display');
+const clearDisplay = document.querySelector('.is-clear');
 
-calculator.forEach(button =>
+calculatorButtons.forEach(button =>
     addEventListener('click', e => {
         if (e.target.nodeName === 'BUTTON') {
             let val = e.target.innerHTML;
 
             if (val === '=') {
-                display.innerHTML = eval(display.innerHTML);
+                displayWindow.innerHTML = eval(displayWindow.innerHTML);
             } else {
-                display.innerHTML += val;
+                displayWindow.innerHTML += val;
             }
         }
     })
 );
 
-// function displayInfo(e) {
-//     e.target.value += display;
-// }
+clearDisplay.addEventListener('click', () => (display.innerHTML = ''));
